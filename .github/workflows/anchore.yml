@@ -35,7 +35,7 @@ jobs:
           # The path to scan. This option is mutually exclusive with "image".
           path: .
           # Set this to any value to enable verbose debug output
-          debug: # optional, default is false
+          debug: true
           # Set to false to avoid failing based on severity-cutoff. Default is to fail when severity-cutoff is reached (or surpassed)
           fail-build: true
           # Generate a SARIF report and set the `sarif` output parameter after successful action execution.  This report is compatible with GitHub Automated Code Scanning (ACS), as the artifact to upload for display as a Code Scanning Alert report.
