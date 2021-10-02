@@ -27,7 +27,7 @@ jobs:
 
       - name: Build Container with Anchore Container Scan
         # You may pin to the exact commit or the version.
-        run: docker build . --file Dockerfile --tag testimage:latest
+        run: docker build . --file ./Dockerfile.yml --tag testimage:latest
       - uses: anchore/scan-action@v3.1.0
         with:
             # The image to scan. This option is mutually exclusive with "path". 
