@@ -31,9 +31,9 @@ jobs:
         uses: anchore/scan-action@v3.1.0
         with:
           # The image to scan. This option is mutually exclusive with "path". 
-          image: docker.io/vulnerables/web-dvwa:latest
+          image: docker.io/jrrdev/cve-2017-5638:latest
           # The path to scan. This option is mutually exclusive with "image".
-          path: # optional
+          path: /
           # Set this to any value to enable verbose debug output
           debug: # optional, default is false
           # Set to false to avoid failing based on severity-cutoff. Default is to fail when severity-cutoff is reached (or surpassed)
